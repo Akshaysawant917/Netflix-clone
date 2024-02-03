@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+}
+
+body {
+  background-color: black;
+  margin: 0; /* Remove default body margin */
+}
+
+.main {
+  background-image: url(./assets/IN-en-20240107-trifectadaily-perspective_alpha_website_small.jpg);
+  height: 100vh; /* Doubled value */
+  background-size: cover; /* Use cover for full coverage */
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.main .box {
+  height: 100vh; /* Doubled value */
+  opacity: 0.7;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  max-width: 160vw; /* Doubled value */
+  margin: auto;
+  justify-content: space-between;
+  height: 70px; /* Doubled value */
+  padding: 0 30px; /* Doubled value */
+}
+
+nav img {
+  z-index: 10;
+  position: relative;
+  color: red;
+  width: 140px; /* Doubled value */
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+  border-radius: 20%; /* Doubled value */
+}
+
+.btn {
+  font-size: 2px; /* Doubled value */
+  border-radius: 20%; /* Doubled value */
+}
+
+.langbtn {
+  font-size: 14px; /* Doubled value */
+  background-color: transparent;
+  color: white;
+  border: 0.2px solid white; /* Doubled value */
+  border-radius: 6%; /* Doubled value */
+  padding: 4px 16px; /* Doubled value */
+  width: 120px; /* Doubled value */
+}
+
+.signinbtn {
+  font-size: 14px; /* Doubled value */
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 10%; /* Doubled value */
+  margin-left: 10px; /* Doubled value */
+  padding: 4px 20px; /* Doubled value */
+}
+
+.middle {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  z-index: 10;
+  font-family: "martel Sans";
+  line-height: 50px; /* Doubled value */
+  padding: 0 30px; /* Doubled value */
+}
+
+.middle > :first-child {
+  font-size: 40px; /* Doubled value */
+  font-weight: 1800; /* Doubled value */
+}
+
+.middle > :nth-child(2),
+.middle > :nth-child(3) {
+  font-size: 20px; /* Doubled value */
+}
+
+.strip input {
+  font-size: 14px; /* Doubled value */
+  background-color: black;
+  opacity: 80%; /* Doubled value */
+  border: 0.2px solid white; /* Doubled value */
+  height: 40px; /* Doubled value */
+  border-radius: 4%; /* Doubled value */
+  width: 300px; /* Doubled value */
+}
+
+.strip button {
+  font-size: 16px; /* Doubled value */
+  font-weight: 1000; /* Doubled value */
+  background-color: red;
+  height: 40px; /* Doubled value */
+  border: none;
+  color: white;
+  width: 140px; /* Doubled value */
+  padding: 6px 16px; /* Doubled value */
+  border-radius: 10%; /* Doubled value */
+}
+
+.sepration {
+  height: 6px; /* Doubled value */
+  background-color: rgb(40, 37, 37);
+}
+
+.section1,
+.section2 {
+  font-size: 20px; /* Doubled value */
+  display: flex;
+  height: 400px; /* Doubled value */
+  background-color: black;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 30px; /* Doubled value */
+}
+
+.section1 img,
+.section2 img {
+  width: 30%; /* Doubled value */
+  z-index: 20; /* Doubled value */
+}
+
+.bold {
+  font-size: 40px; /* Doubled value */
+  font-weight: 1000; /* Doubled value */
+  color: white;
+}
+
+.text {
+  color: white;
+  font-size: 20px; /* Doubled value */
+}
+
+.section1 video {
+  position: absolute;
+  width: 340px; /* Doubled value */
+  margin-left: 830px; /* Doubled value */
+}
+
+.section2 img {
+  height: 50%; /* Doubled value */
+}
+
+.container {
+  margin: 20px 30px; /* Doubled value */
+}
+
+.question {
+  padding-bottom: 10px; /* Doubled value */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px; /* Doubled value */
+}
+
+.boxf {
+  border-radius: 4px; /* Doubled value */
+  background-color: rgb(201, 184, 184);
+  margin-top: 10px; /* Doubled value */
+  width: 80%; /* Doubled value */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px; /* Doubled value */
+  font-size: 20px; /* Doubled value */
+}
+
+.answer {
+  max-height: 0px;
+  overflow: hidden;
+}
+
+.icon {
+  transition: transform 0.4s; /* Doubled value */
+}
+
+.icon.active {
+  transform: rotate(-360deg); /* Doubled value */
+}
+
+.answer.active {
+  max-height: fit-content;
+}
+/* Mobile Size Media Queries */
+@media (max-width: 600px) {
+  .main {
+    height: 70vh; /* Adjusted value for smaller screens */
+  }
+
+  .main .box {
+    height: 70vh; /* Adjusted value for smaller screens */
+  }
+
+  nav {
+    max-width: 100vw; /* Adjusted value for smaller screens */
+    height: 50px; /* Adjusted value for smaller screens */
+    padding: 0 15px; /* Adjusted value for smaller screens */
+  }
+
+  nav img {
+    width: 70px; /* Adjusted value for smaller screens */
+  }
+
+  nav button {
+    border-radius: 10%; /* Adjusted value for smaller screens */
+  }
+
+  .btn {
+    font-size: 1px; /* Adjusted value for smaller screens */
+    border-radius: 10%; /* Adjusted value for smaller screens */
+  }
+
+  .langbtn {
+    font-size: 7px; /* Adjusted value for smaller screens */
+    padding: 2px 8px; /* Adjusted value for smaller screens */
+    width: 60px; /* Adjusted value for smaller screens */
+  }
+
+  .signinbtn {
+    font-size: 7px; /* Adjusted value for smaller screens */
+    margin-left: 5px; /* Adjusted value for smaller screens */
+    padding: 2px 10px; /* Adjusted value for smaller screens */
+  }
+
+  .middle {
+    line-height: 30px; /* Adjusted value for smaller screens */
+    padding: 0 15px;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .section1 video {
+    position: absolute;
+    width: 80px; /* Doubled value */
+    margin-left: 220px; /* Doubled value */
+  }
+  .section2 img {
+    height: 30%; /* Doubled value */
+  }
+  .section1,
+  .section2 {
+    height: 200px;
+    font-size: 10px;
+  }
+  .bold {
+    font-size: 20px; /* Doubled value */
+   
+  }
+  
+  .text {
+    
+    font-size: 10px; /* Doubled value */
+  }
+  .strip{
+    
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+
+  }
+  .strip input{
+    margin-bottom: 10px;
+  }
+}
